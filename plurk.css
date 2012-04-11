@@ -303,6 +303,7 @@ body {
 .plurkaction.pane:hover {
 	max-height:			600px !important;
 	max-width:			900px !important;
+	width:				900px !important; /* Fix Opera 延伸長度太短的問題 */
 }
 textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	border:				1px solid black;
