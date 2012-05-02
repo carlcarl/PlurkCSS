@@ -308,6 +308,36 @@ body {
 textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	border:				1px solid black;
 }
+
+/*======================== 表情選單 ========================*/
+
+#emoticon_selecter #emoticons_tabs,  /*選項標籤列*/
+#emoticon_selecter #emoticons_tabs li
+{
+    background:none !important;
+    border:0 !important;
+    font-size:12px !important;
+}
+
+#emoticon_selecter .upper_arrow   /*向上箭頭符號*/
+{
+    background-image:none !important;  /*拿掉背景圖*/
+}
+
+#emoticons_tabs ul li a {color:#aaa !important;font-weight:normal !important;}  /*連結*/
+#emoticons_tabs ul li.current a  {color:#333 !important;}  /*正選標籤的連結*/
+
+#emoticon_selecter a:hover,  /*滑鼠移至效果*/
+#emoticons_tabs ul li a:hover
+{
+    color:#111 !important;
+}
+#emotion_selector
+{
+	top: 0px;
+	right: 100px;
+}
+
 /* 私噗設定面板 */
 #more_options_link {
 	background-image:	none;
