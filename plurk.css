@@ -332,11 +332,6 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 {
     color:#111 !important;
 }
-#emotion_selector
-{
-	top: 0px;
-	right: 100px;
-}
 
 /* 私噗設定面板 */
 #more_options_link {
