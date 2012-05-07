@@ -273,8 +273,17 @@ body {
 
 /* 發文訊息面板 */
 .plurkaction.pane textarea {
+	max-height:	40px		!important;
+
+	-webkit-transition: max-height 1.0s ease-out 0.1s;
+	-moz-transition: 	max-height 1.0s ease-out 0.2s;
+	-o-transition: 		max-height 1.0s ease-out 0.2s;
+}
+
+.plurkaction.pane:hover textarea {
 	max-height:	380px		!important;
 }
+
 .plurkaction.pane {
 	position: 			fixed		!important;
 	top: 				30px		!important;
@@ -282,20 +291,19 @@ body {
 	z-index: 			910			!important;
 	overflow:			hidden		!important;
 	border: 			none		!important;
-	max-height:			40px;
-	max-width:			200px;
+	max-height:			45px;
+	max-width:			900px;
+	width:				900px !important; /* Fix Opera 延伸長度太短的問題 */
 	background-image:	none;
 	background-color:	rgba(230,230,230,0.8);
 	color:				black;
 	-moz-border-radius:		5px;
 	-webkit-border-radius:	5px;
 	border-radius:			5px;
-	-webkit-transition: max-height 1.0s ease-out 0.1s,
-						max-width 1.0s ease-out 0.1s;
-	-moz-transition: 	max-height 1.0s ease-out 0.2s,
-						max-width 1.0s ease-out 0.1s;
-	-o-transition: 		max-height 1.0s ease-out 0.2s,
-						max-width 1.0s ease-out 0.1s;
+
+	-webkit-transition: max-height 1.0s ease-out 0.1s;
+	-moz-transition: 	max-height 1.0s ease-out 0.2s;
+	-o-transition: 		max-height 1.0s ease-out 0.2s;
 	-moz-box-shadow:	0px 1px 5px 2px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow:	0px 1px 5px 2px rgba(0, 0, 0, 0.8);
 	box-shadow:			0px 1px 5px 2px rgba(0, 0, 0, 0.8);
