@@ -827,8 +827,8 @@ body,
 /* 隱藏每個撲底下的廣告 */
 #resp_banner_ads
 {
-	height:0;
-	width:0;
+	height:0 !important;
+	width:0 !important;
 }
 
 /* Welcome to use and modify this CSS theme.  Please do not remove the name of designer, Howar31.  Thanks. :D */
