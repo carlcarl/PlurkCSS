@@ -824,6 +824,13 @@ body,
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.8);
 }
 
+/* 隱藏每個撲底下的廣告 */
+#resp_banner_ads
+{
+	height:0;
+	width:0;
+}
+
 /* Welcome to use and modify this CSS theme.  Please do not remove the name of designer, Howar31.  Thanks. :D */
 /* 喜歡本佈景的噗友歡迎使用並自行做小修改以符合個人需求，但希望能保留原作者Howar31的署名，感謝:D */
 /* Design by Howar31  http://about.me/howar31 */
