@@ -812,17 +812,94 @@ body,
 ::-webkit-scrollbar-track:hover {
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: #EFEFEF;
     -webkit-border-radius:10px;
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 }
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.7);
 }
-::-webkit-scrollbar-thumb:active{
+::-webkit-scrollbar-thumb:active {
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.8);
 }
+
+
+@-webkit-keyframes plurkPop 
+{
+	from
+	{
+		-webkit-transform:perspective(500px) rotateY(90deg);
+	}
+
+	50%
+	{
+		-webkit-transform:perspective(500px) rotateY(90deg);
+	}
+
+	60% 
+	{
+		-webkit-transform: perspective(500px);
+	}
+}
+
+/* 噗浪回應旋轉特效 */
+@-moz-keyframes plurkPop {
+	from
+	{
+		-moz-transform:perspective(500px) rotateY(90deg);
+	}
+
+	50%
+	{
+		-moz-transform:perspective(500px) rotateY(90deg);
+	}
+
+	60% 
+	{
+		-moz-transform: perspective(500px);
+	}
+}
+
+@-o-keyframes plurkPop {
+	from
+	{
+		/* -o-transform:perspective(500px) rotateY(90deg); */
+	}
+
+	50%
+	{
+		/* -o-transform:perspective(500px) rotateY(90deg); */
+	}
+
+	60% 
+	{
+		/* -o-transform: perspective(500px); */
+	}
+}
+
+.list .plurk, ul.responses li{-webkit-animation: plurkPop 2.0s linear -0.5s; -moz-animation: plurkPop 2.0s linear -0.5s; -o-animation: plurkPop 2.0s linear -0.5s;}
+
+.list .plurk:nth-last-child(9), ul.responses li:nth-last-child(9){-webkit-animation-delay: -0.45s; -moz-animation-delay: -0.45s; -o-animation-delay: -0.45s;}
+.list .plurk:nth-last-child(8), ul.responses li:nth-last-child(8){-webkit-animation-delay: -0.4s; -moz-animation-delay: -0.4s; -o-animation-delay: -0.4s;}
+.list .plurk:nth-last-child(7), ul.responses li:nth-last-child(7){-webkit-animation-delay: -0.35s; -moz-animation-delay: -0.35s; -o-animation-delay: -0.35s;}
+.list .plurk:nth-last-child(6), ul.responses li:nth-last-child(6){-webkit-animation-delay: -0.3s; -moz-animation-delay: -0.3s; -o-animation-delay: -0.3s;}
+.list .plurk:nth-last-child(5), ul.responses li:nth-last-child(5){-webkit-animation-delay: -0.25s; -moz-animation-delay: -0.25s; -o-animation-delay: -0.25s;}
+.list .plurk:nth-last-child(4), ul.responses li:nth-last-child(4){-webkit-animation-delay: -0.2s; -moz-animation-delay: -0.2s; -o-animation-delay: -0.2s;}
+.list .plurk:nth-last-child(3), ul.responses li:nth-last-child(3){-webkit-animation-delay: -0.15s; -moz-animation-delay: -0.15s; -o-animation-delay: -0.15s;}
+.list .plurk:nth-last-child(2), ul.responses li:nth-last-child(2){-webkit-animation-delay: -0.1s; -moz-animation-delay: -0.1s; -o-animation-delay: -0.1s;}
+.list .plurk:nth-last-child(1), ul.responses li:nth-last-child(1){-webkit-animation-delay: -0.05s; -moz-animation-delay: -0.05s; -o-animation-delay: -0.05s;}
+
+.list .plurk:nth-child(1), ul.responses li:nth-child(1){-webkit-animation-delay: -0.95s; -moz-animation-delay: -0.95s; -o-animation-delay: -0.95s;}
+.list .plurk:nth-child(2), ul.responses li:nth-child(2){-webkit-animation-delay: -0.9s; -moz-animation-delay: -0.9s; -o-animation-delay: -0.9s;}
+.list .plurk:nth-child(3), ul.responses li:nth-child(3){-webkit-animation-delay: -0.85s; -moz-animation-delay: -0.85s; -o-animation-delay: -0.85s;}
+.list .plurk:nth-child(4), ul.responses li:nth-child(4){-webkit-animation-delay: -0.8s; -moz-animation-delay: -0.8s; -o-animation-delay: -0.8s;}
+.list .plurk:nth-child(5), ul.responses li:nth-child(5){-webkit-animation-delay: -0.75s; -moz-animation-delay: -0.75s; -o-animation-delay: -0.75s;}
+.list .plurk:nth-child(6), ul.responses li:nth-child(6){-webkit-animation-delay: -0.7s; -moz-animation-delay: -0.7s; -o-animation-delay: -0.7s;}
+.list .plurk:nth-child(7), ul.responses li:nth-child(7){-webkit-animation-delay: -0.65s; -moz-animation-delay: -0.65s; -o-animation-delay: -0.65s;}
+.list .plurk:nth-child(8), ul.responses li:nth-child(8){-webkit-animation-delay: -0.6s; -moz-animation-delay: -0.6s; -o-animation-delay: -0.6s;}
+.list .plurk:nth-child(9), ul.responses li:nth-child(9){-webkit-animation-delay: -0.55s; -moz-animation-delay: -0.55s; -o-animation-delay: -0.55s;}
+/* 噗浪回應旋轉特效 end */
 
 /* 隱藏每個撲底下的廣告 */
 #resp_banner_ads
