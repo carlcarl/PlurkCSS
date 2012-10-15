@@ -324,6 +324,15 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 
 /*======================== 表情選單 ========================*/
 
+#emoticon_selecter
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
 #emoticon_selecter #emoticons_tabs,  /*選項標籤列*/
 #emoticon_selecter #emoticons_tabs li
 {
@@ -900,6 +909,82 @@ body,
 .list .plurk:nth-child(8), ul.responses li:nth-child(8){-webkit-animation-delay: -0.6s; -moz-animation-delay: -0.6s; -o-animation-delay: -0.6s;}
 .list .plurk:nth-child(9), ul.responses li:nth-child(9){-webkit-animation-delay: -0.55s; -moz-animation-delay: -0.55s; -o-animation-delay: -0.55s;}
 /* 噗浪回應旋轉特效 end */
+
+/* reply time tag */
+
+/* animation used for reply time tag */
+@-webkit-keyframes popFromLeft {
+	from {
+		-webkit-transform: scale(0.25, 0.25);
+		margin-left: -13px;
+	}
+
+	50% {
+		-webkit-transform: scale(1.10, 1.10);
+		margin-left: 0px;
+	}
+
+	to {
+		margin-left: -3px;
+	}
+}
+
+/* same thing with aurora */
+@-moz-keyframes popFromLeft {
+	from {
+		-moz-transform: scale(0.25, 0.25);
+		margin-left: -13px;
+	}
+
+	50% {
+		-moz-transform: scale(1.10, 1.10);
+		margin-left: 0px;
+	}
+
+	to {
+		margin-left: -3px;
+	}
+}
+
+@-o-keyframes popFromLeft {
+	from {
+		-o-transform: scale(0.25, 0.25);
+		margin-left: -13px;
+	}
+
+	50% {
+		-o-transform: scale(1.10, 1.10);
+		margin-left: -0px;
+	}
+
+	to {
+		margin-left: -3px;
+	}
+}
+
+/* Response box at the right side of each comment */
+.response_time {
+	box-shadow: 0.1px 2px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0.1px 2px 5px rgba(0,0,0,0.5);
+	-webkit-transition: opacity 0.4s ease;
+	-webkit-animation: popFromLeft 0.4s ease;
+
+	-moz-box-shadow: 0.1px 2px 5px rgba(0,0,0,0.5);
+	-moz-transition: opacity 0.4s ease;
+	-moz-animation: popFromLeft 0.4s ease;
+
+	-o-box-shadow: 0.1px 2px 5px rgba(0,0,0,0.5);
+	-o-transition: opacity 0.4 ease;
+	-o-animation: popFromLeft 0.4s ease;
+
+	margin-left:-3px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
 
 /* 隱藏每個撲底下的廣告 */
 #resp_banner_ads
