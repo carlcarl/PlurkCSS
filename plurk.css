@@ -758,7 +758,8 @@ body,
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.8);
 }
 
-
+/* 噗浪回應旋轉特效 */
+/*
 @-webkit-keyframes plurkPop 
 {
 	from
@@ -777,7 +778,7 @@ body,
 	}
 }
 
-/* 噗浪回應旋轉特效 */
+
 @-moz-keyframes plurkPop {
 	from
 	{
@@ -798,17 +799,17 @@ body,
 @-o-keyframes plurkPop {
 	from
 	{
-		/* -o-transform:perspective(500px) rotateY(90deg); */
+		
 	}
 
 	50%
 	{
-		/* -o-transform:perspective(500px) rotateY(90deg); */
+		
 	}
 
 	60% 
 	{
-		/* -o-transform: perspective(500px); */
+		
 	}
 }
 
@@ -833,6 +834,7 @@ body,
 .list .plurk:nth-child(7), ul.responses li:nth-child(7){-webkit-animation-delay: -0.65s; -moz-animation-delay: -0.65s; -o-animation-delay: -0.65s;}
 .list .plurk:nth-child(8), ul.responses li:nth-child(8){-webkit-animation-delay: -0.6s; -moz-animation-delay: -0.6s; -o-animation-delay: -0.6s;}
 .list .plurk:nth-child(9), ul.responses li:nth-child(9){-webkit-animation-delay: -0.55s; -moz-animation-delay: -0.55s; -o-animation-delay: -0.55s;}
+*/
 /* 噗浪回應旋轉特效 end */
 
 /* reply time tag */
